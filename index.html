@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Minesweeper</title>
+    <link rel="stylesheet" href="threads.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="gears.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="board">
+        	<div id="menu">
+        		<h2 id="title">Minesweeper</h2>
+        		<button class="button" onclick="newGame(1.1);">Easy</button>
+        		<button class="button" onclick="newGame(1.2);">Medium</button>
+        		<button class="button" onclick="newGame(1.3);">Hard</button>
+        	</div>
+        	<div id="game-bar" class="hidden">
+        		<span class="bar-item left">MINES:</span><span id="mine-count"></span>
+        		<!-- <span class="bar-item right">TIME:</span><span id="time-count"></span> -->
+        	</div>
+        	<div id="game" class="hidden"></div>
+            <div id="game-cover" class="hidden"></div>
+        </div>
+    </div>
+</body>
+
+</html>
